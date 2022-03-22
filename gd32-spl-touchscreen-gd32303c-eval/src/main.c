@@ -135,7 +135,7 @@ int main(void)
                 get_touch_area(touch_coordinate_x_get(touch_ad_x),(LCD_Y - touch_coordinate_y_get(touch_ad_y)),num);
             }else if((0x9320 == device_code) || (0x9300 == device_code)){
                 /* ILI9320 */
-                get_touch_area(LCD_X - touch_coordinate_x_get(touch_ad_x),(LCD_Y - touch_coordinate_y_get(touch_ad_y)),num);
+                get_touch_area(/*LCD_X - */touch_coordinate_x_get(touch_ad_x),(LCD_Y - touch_coordinate_y_get(touch_ad_y)),num);
             }
         }
         /*  generate response to the touch(turn on LED and change picture )*/
